@@ -1,0 +1,32 @@
+{
+  "name": "weather-app",
+  "version": "0.0.1",
+  "description": "A simple weather app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sauravk7077/Javascript-Weather-App.git"
+  },
+  "keywords": [
+    "Javascript",
+    "Weather",
+    "App",
+    "Weather",
+    "App",
+    "Weather",
+    "Javascript"
+  ],
+  "author": "Saurav Kumar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sauravk7077/Javascript-Weather-App/issues"
+  },
+  "homepage": "https://github.com/sauravk7077/Javascript-Weather-App#readme",
+  "dependencies": {
+    "@types/jquery": "^3.5.0",
+    "@types/node": "^14.0.14"
+  }
+}
