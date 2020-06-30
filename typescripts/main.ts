@@ -1,14 +1,10 @@
+
 $(document).ready(()=>{
-    let container;
-    let inputBox;
     function addBox() {
-        container = document.createElement('div');
-        container.classList.add('container');
-        $('body').append(container);
-        inputBox = document.createElement('input');
-        inputBox.type = "text";
-        inputBox.classList.add('search');
-        $(container).append(inputBox);
-    }
+        let iframeBox = document.createElement('iframe');
+        iframeBox.src = '/template.html';
+        $('body').append(iframeBox);
+        $('#reveal').remove();
+    };
     $('#reveal').click(addBox);
 });
