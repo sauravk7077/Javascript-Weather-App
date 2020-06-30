@@ -56,3 +56,10 @@ iframe, body{
     margin: 0;
     border: none;
 }
+
+.preloader, .buttonDiv{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
