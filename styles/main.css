@@ -1,57 +1,148 @@
+body{
+    --main-bg: hsl(195, 46%, 4%);
+    --bg-light: hsl(195, 46%, 20%);
+    --max-blue: hsl(190, 67%, 60%);
+    --crimson: #D7263D;
+    --acid-green: #C6CA53;
+    background: var(--main-bg);
+    padding: 0;
+    overflow: hidden;
+}
+
 .container{
     display: flex;
     width: auto;
     flex-direction: column;
     align-items: center;
     height: 500px;
-    border: 1px solid grey;
     max-width: 500px;
     padding: 5px 0px 5px 5px;
     margin: auto;
-}
-.rightSide{
-    flex-basis: 300px;
-    text-align: center;
-}
-.tempRange, .wind{
-    display: flex;
+    box-shadow: 0 0 20px var(--max-blue);
 }
 
+
+.leftSide{
+    flex-basis: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.leftSide *{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.leftSide i{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+.rightSide{
+    flex-basis: 500px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.wind, .tempRange{
+    display: flex;
+    background-color: var(--bg-light);
+    padding: 5px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+
+#hidden{
+    margin: 10px 0 10px 0;
+}
+.hide{
+    display: none;
+}
 .columnBox{
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-family: 'Montez', cursive;
+    color: #37BCD7;
+    animation: growBoth 2.5s;
 }
 .columnBox div{
     margin: 5px;
 }
 
+/* 
+--------------
+Images
+--------------
+*/
 
-img{
-    width: 64px;
+
+#mainImg{
+    font-size: 80px;
+    color: #D7263D;
+}
+.tempRange i, .wind i{
+    font-size: 40px;
+}
+i {
+    display: flex !important;
+    align-items: center;
 }
 
 #vr{
     width: 2px;
-    background-color:black;
+    background-color:hsl(195, 46%, 60%);
     height: 88%;
 }
+h4{
+    margin: auto;
+    text-align: center;
+}
+div h6{
+    display: inline;
+}
+.tempNow, .desc, div h6{
+    color:var(--acid-green);
+}
+h2{
+    font-family: 'Kranky', cursive;
+}
 
+.center{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 
+--------
+Input 
+--------
+*/
 
 .search{
+    background: transparent;
+    font-family: 'Julius Sans One', sans-serif;
     font-size: xx-large;
     text-align: center;
     max-width: 300px;
     max-height: 40px;
     flex-grow: 2;
     border: none;
-    border-bottom: 1px solid #000;
+    border-bottom: 2px solid var(--max-blue);
     outline: none;
+    color:#37BCD7;
+    animation: grow 2s;
 }
-body{
-    padding: 0;
-    overflow: hidden;
+
+.search::placeholder{
+    color: #37BCD7;
 }
+
 
 iframe, body{
     width: 100vw;
@@ -65,4 +156,48 @@ iframe, body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#reveal{
+    width: 300px;
+    height: 80px;
+    border-radius: 5px;
+    font-size: large;
+    border: 1px solid hsl(195, 46%, 70%);
+    color: hsl(195, 46%, 80%);
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+#reveal:hover{
+    color: var(--bg-light);
+    background-color: hsl(195, 46%, 85%);
+    box-shadow: 0 0 20px var(--max-blue);
+}
+
+
+
+/*
+------------------
+ Animations
+ -----------------
+*/
+
+
+@keyframes grow{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes growBoth{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
 }

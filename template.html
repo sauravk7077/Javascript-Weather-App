@@ -3,60 +3,69 @@
     <head>
         <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document</title>    
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Mono&family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Kranky&family=Montez&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/weather-icons/css/weather-icons.css">
+    <link rel="stylesheet" href="static/weather-icons/css/weather-icons-wind.css">
     <link rel="stylesheet" href="styles/main.css">
     <script src="scripts/frame.js"></script>
     </head>
     <body>
-        <div class="container">
-            <input type="text" class="search" placeholder="Enter city"/>
-            <div  class="columnBox">
-                <div>
-                    <h2 class="address"></h2>
-                    <h3 class="day"></h3>
-                    <h3 class="date"></h3>
-                    <img src="" id="mainImg"/>
-                    <h4 class="tempNow"></h4>
-                </div>
-                <div id="vr"></div>
-                <div class="rightSide">
-                    <h2>Today's weather details</h2>
-                    <h4>
-                            Precipitation
-                            
-                        <h5 class="ppt">
-                                
-                        </h5>
-                    </h4>
-                    <div class="tempRange">
-                        <h4 class="maxTemp">
-                            Max Temperature: 
-                            
-                            <h5></h5>
-                        </h4>
-                        <h4 class="minTemp">
-                            Min Temperature: 
-                            
-                            <h5></h5>
-                        </h4>
+        <div class="center">
+            <div class="container">
+                <input type="text" class="search" placeholder="Enter city"/>
+                <div  class="hide" id="hidden">
+                    <div class="leftSide">
+                        <h2 class="address"></h2>
+                        <h3 class="day"></h3>
+                        <h3 class="date"></h3>
+                        <i id="mainImg"/></i>
+                        <h4 class="tempNow"></h4>
+                        <h4 class="desc"></h4>
                     </div>
-                    <h4>
-                            Pressure
-                            
-                        <h5 class="pressure"></h5>
-                    </h4>
-                    <div class="wind">
+                    <div id="vr"></div>
+                    <div class="rightSide">
+                        <h2>Today's weather details</h2>
                         <h4>
-                                Wind Speed
+                                Precipitation
                                 
-                            <h5 class="windSpeed"></h5>
+                            <h6 class="humidity">
+                                    
+                            </h6>
                         </h4>
+                        <div class="tempRange">
+                            <h4>
+                                Max Temperature: 
+                                <h6 class="maxTemp"></h6>
+                                <i class="wi wi-thermometer"></i>
+                            </h4>
+                            <h4>
+                                Min Temperature: 
+                                <h6 class="minTemp"></h6>
+                                <i class="wi wi-thermometer-exterior"></i>
+                            </h4>
+                        </div>
                         <h4>
-                                Wind direction
+                                Pressure
                                 
-                            <h5 class="winddirection"></h5>
+                            <h6 class="pressure"></h6>
                         </h4>
+                        <div class="wind">
+                            <h4>
+                                    Wind Speed
+                                    
+                                <h6 class="windSpeed"></h6>
+                                <i class="wi wi-strong-wind"></i>
+                            </h4>
+                            <h4>
+                                    Wind direction
+                                    
+                                <h6 class="winddirection"></h6>
+                                <i id="windDirImg"></i>
+                            </h4>
+                        </div>
                     </div>
                 </div>
             </div>
