@@ -1,7 +1,7 @@
 $(document).ready(() => {
     let url = 'https://api.openweathermap.org/data/2.5/weather?q=';
     let imgUrl = 'https://openweathermap.org/img/wn/';
-    let api_key = '37540f937e26e3fe35860c835ecb224a';
+    let api_key = 'your_api_key';
     let units = "metric";
     function addLoader() {
         $('.container').append(`<div class="preloader">
