@@ -1,6 +1,8 @@
 # Javascript-Weather-App
 
 This project is a simple weather web app made using javascript and [openweatherapi](https://openweathermap.org/). This app shows the basic weather details.
+
+
 ![alt text](https://raw.githubusercontent.com/sauravk7077/Javascript-Weather-App/master/display2.png)
 ![alt text](https://raw.githubusercontent.com/sauravk7077/Javascript-Weather-App/master/display.png)
 
